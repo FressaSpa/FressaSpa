@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.header {
+    background-color: #ffccd8;
+    color: white;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: bold;
+}
+h1 {
+    margin: 0;
+}
+strong, b {
+    color: #ff69b4; /* Letras en negrita en color rosado */
+}
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+.contact {
+    margin-top: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff69b4;
+}
