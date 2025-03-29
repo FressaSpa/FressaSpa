@@ -1,49 +1,140 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fressa Spa</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fressa Spa</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff0f5;
+      color: #333;
+    }
+    header {
+      background-color: #f06292;
+      padding: 20px;
+      text-align: center;
+      color: white;
+    }
+    section {
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+    h1, h2 {
+      margin-bottom: 10px;
+    }
+    .service {
+      margin-bottom: 15px;
+    }
+    .service-title {
+      font-weight: bold;
+      cursor: pointer;
+      color: #d81b60;
+    }
+    .description {
+      display: none;
+      margin-top: 5px;
+      padding-left: 15px;
+      color: #555;
+    }
+    footer {
+      background-color: #f8bbd0;
+      text-align: center;
+      padding: 10px;
+      font-size: 14px;
+    }
+  </style>
 </head>
 <body>
-    <div class="header">
-        <h1>Fressa Spa</h1>
+  <header>
+    <h1>Fressa Spa</h1>
+    <p>BodySculpting by Fressa</p>
+  </header>
+
+  <section>
+    <h2>Servicios</h2>
+
+    <div class="service">
+      <div class="service-title" onclick="toggleDescription(this)">Tratamientos Faciales Anti-Edad</div>
+      <div class="description">Rejuvenecen la piel, mejoran la firmeza y reducen líneas de expresión usando productos especializados.</div>
     </div>
 
-    <div class="container">
-        <p class="subtitle">Relájate y cuida tu cuerpo con nuestros tratamientos especializados.</p>
-
-        <div class="services">
-            <div class="service">
-                <h2><b>Lymphatic Drainage Massage</b></h2>
-                <p>Ayuda a reducir la retención de líquidos y mejora la circulación.</p>
-            </div>
-            <div class="service">
-                <h2><b>Masajes Reductores</b></h2>
-                <p>Ayuda a eliminar grasa localizada y tonificar tu cuerpo.</p>
-            </div>
-            <div class="service">
-                <h2><b>Celulitis Treatment</b></h2>
-                <p>Tratamiento eficaz para mejorar la apariencia de la piel y reducir la celulitis.</p>
-            </div>
-            <div class="service">
-                <h2><b>Hidrolipoclasia</b></h2>
-                <p>Procedimiento no invasivo para eliminar grasa localizada.</p>
-            </div>
-            <div class="service">
-                <h2><b>Faciales</b></h2>
-                <p>Tratamientos faciales para rejuvenecer y cuidar tu piel.</p>
-            </div>
-        </div>
-
-        <div class="contact">
-            <h2>Contacto</h2>
-            <p>📞 <b>Teléfono:</b> ()</p>
-            <p>📷 <b>Instagram:</b> 
-                <a href="https://www.instagram.com/fressa_spa" target="_blank">@fressa_Spa</a>
-            </p>
-        </div>
+    <div class="service">
+      <div class="service-title" onclick="toggleDescription(this)">Tratamientos Para Acné</div>
+      <div class="description">Ayudan a limpiar profundamente los poros, controlar el exceso de grasa y reducir inflamaciones.</div>
     </div>
+
+    <div class="service">
+      <div class="service-title" onclick="toggleDescription(this)">Limpieza Profunda</div>
+      <div class="description">Remueve impurezas, puntos negros y células muertas para una piel fresca y limpia.</div>
+    </div>
+
+    <div class="service">
+      <div class="service-title" onclick="toggleDescription(this)">Depilación Con Cera</div>
+      <div class="description">Eliminación del vello desde la raíz, dejando la piel suave por más tiempo.</div>
+    </div>
+
+    <div class="service">
+      <div class="service-title" onclick="toggleDescription(this)">Vajacial</div>
+      <div class="description">Tratamiento facial para la zona íntima que ayuda a eliminar manchas e irritaciones post-depilación.</div>
+    </div>
+
+    <div class="service">
+      <div class="service-title" onclick="toggleDescription(this)">Mesoterapia</div>
+      <div class="description">Aplicación de vitaminas y medicamentos directamente en la piel para mejorar su apariencia y firmeza.</div>
+    </div>
+
+    <div class="service">
+      <div class="service-title" onclick="toggleDescription(this)">Hidrolipoclasia (Lipo Sin Cirugía)</div>
+      <div class="description">Técnica no invasiva que disuelve la grasa localizada mediante líquidos y ultrasonido.</div>
+    </div>
+
+    <div class="service">
+      <div class="service-title" onclick="toggleDescription(this)">Masajes Reductores</div>
+      <div class="description">Estimulan la quema de grasa localizada y ayudan a moldear el cuerpo.</div>
+    </div>
+
+    <div class="service">
+      <div class="service-title" onclick="toggleDescription(this)">Masajes Post Operatorios</div>
+      <div class="description">Facilitan la recuperación tras cirugías estéticas, reduciendo inflamación y líquidos retenidos.</div>
+    </div>
+
+    <div class="service">
+      <div class="service-title" onclick="toggleDescription(this)">Tratamiento Para Celulitis</div>
+      <div class="description">Reduce la apariencia de la piel de naranja mediante técnicas manuales y aparatología.</div>
+    </div>
+
+    <div class="service">
+      <div class="service-title" onclick="toggleDescription(this)">Masajes de Relajación</div>
+      <div class="description">Terapia suave que reduce el estrés, mejora el estado de ánimo y promueve el bienestar.</div>
+    </div>
+
+    <div class="service">
+      <div class="service-title" onclick="toggleDescription(this)">Fajas Melibelt</div>
+      <div class="description">Fajas moldeadoras que ayudan a resaltar la figura y mejorar la postura.</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Contáctanos</h2>
+    <p><strong>Dirección:</strong> 243 New Main Street, 10701</p>
+    <p><strong>Teléfono:</strong> 929-284-8306</p>
+    <p><strong>Instagram:</strong> <a href="https://www.instagram.com/fressa_spa/" target="_blank">@fressa_spa</a></p>
+    <p><strong>¡Haz tu cita hoy!</strong></p>
+  </section>
+
+  <footer>
+    © 2025 Fressa Spa. Todos los derechos reservados.
+  </footer>
+
+  <script>
+    function toggleDescription(element) {
+      const desc = element.nextElementSibling;
+      desc.style.display = desc.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
 </body>
 </html>
